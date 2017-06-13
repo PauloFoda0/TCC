@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" opacity="0.56" pickOnBounds="true">
+         <image>
+            <Image url="@../Imagens/Produtos.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btCadastro" defaultButton="true" layoutX="93.0" layoutY="329.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="101.0" style="-: Yellow;" text="Cadastro" textFill="#5305ff">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="tfLogin" layoutX="206.0" layoutY="36.0" prefHeight="33.0" prefWidth="251.0" promptText="Digite seu Login" style="-: ;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="pfSenha" layoutX="206.0" layoutY="94.0" prefHeight="33.0" prefWidth="251.0" promptText="Digite sua Senha">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="btLogin" defaultButton="true" layoutX="407.0" layoutY="329.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="101.0" text="Login" textFill="#1302ff">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="143.0" layoutY="36.0" prefHeight="33.0" prefWidth="56.0" text="LOGIN:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="143.0" layoutY="94.0" prefHeight="33.0" prefWidth="56.0" text="SENHA:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DescricaoController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="606.0" opacity="0.7" pickOnBounds="true">
+         <image>
+            <Image url="@../Imagens/produto.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btVendido" defaultButton="true" layoutX="422.0" layoutY="32.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="167.0" text="Produtos Vendidos" textFill="#1302ff">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btComprado" defaultButton="true" layoutX="7.0" layoutY="32.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="177.0" text="Produtos Comprados" textFill="#1302ff">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btPdfUsuario" defaultButton="true" layoutX="184.0" layoutY="117.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="238.0" text="Retirar PDF de Usuarios" textFill="#1302ff">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btPdfProduto" defaultButton="true" layoutX="184.0" layoutY="200.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="238.0" text="Retirar PDF de Produtos" textFill="#1302ff">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btVoltar" defaultButton="true" layoutX="235.0" layoutY="337.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="136.0" text="Voltar" textFill="#1302ff">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AtualizarController">
+   <children>
+      <ImageView fitHeight="541.0" fitWidth="757.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Imagens/Produtos2.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tvProduto" prefHeight="418.0" prefWidth="488.0">
+        <columns>
+          <TableColumn fx:id="tcTipo" prefWidth="194.0" text="Tipo" />
+          <TableColumn fx:id="tcLitros" prefWidth="116.0" text="Litros" />
+            <TableColumn fx:id="tcPreco" prefWidth="120.0" text="Preço" />
+            <TableColumn fx:id="tcId" prefWidth="56.0" text="id" />
+        </columns>
+      </TableView>
+      <ImageView fx:id="imagem" fitHeight="262.0" fitWidth="265.0" layoutX="491.0" layoutY="88.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Imagens/Icone%20produto.png" />
+         </image></ImageView>
+      <Button fx:id="btExcluir" defaultButton="true" layoutX="542.0" layoutY="455.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="163.0" style="-: Yellow;" text="Excluir" textFill="#5305ff">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="tfPesquisa" layoutX="537.0" layoutY="23.0" prefHeight="25.0" prefWidth="185.0" promptText="Pesquisar" />
+      <Button fx:id="btVoltar" defaultButton="true" layoutX="50.0" layoutY="455.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="163.0" style="-: Yellow;" text="Voltar" textFill="#5305ff">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

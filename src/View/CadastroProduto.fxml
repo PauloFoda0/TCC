@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CadastroProdutoController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" opacity="0.56" pickOnBounds="true">
+         <image>
+            <Image url="@../Imagens/Produtos2.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btCancelar" defaultButton="true" layoutX="52.0" layoutY="327.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="101.0" style="-: Yellow;" text="Cancelar" textFill="#5305ff">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="tfTipo" layoutX="48.0" layoutY="88.0" prefHeight="25.0" prefWidth="295.0" promptText="Tipo (Ex. detergente, amaciante...)" />
+      <TextField fx:id="tfVolume" layoutX="48.0" layoutY="189.0" prefHeight="25.0" prefWidth="295.0" promptText="Volume (Ex. 5L, 1L...)" />
+      <TextField fx:id="tfPreco" layoutX="48.0" layoutY="278.0" onKeyPressed="#blockPreco" onKeyReleased="#blockPreco" onKeyTyped="#blockPreco" prefHeight="25.0" prefWidth="295.0" promptText="Valor (Ex. 15.50...)" />
+      <Label layoutX="71.0" layoutY="38.0" prefHeight="33.0" prefWidth="249.0" text="Informe o tipo do produto">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="145.0" prefHeight="33.0" prefWidth="362.0" text="Informe o volume do produto (Litros)">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btCadastrar" defaultButton="true" layoutX="448.0" layoutY="327.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="101.0" style="-: Yellow;" text="Cadastrar" textFill="#5305ff">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="15.0" layoutY="239.0" prefHeight="33.0" prefWidth="362.0" text="Informe o preço do produto (R$)">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgFoto" fitHeight="150.0" fitWidth="200.0" layoutX="386.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/Icone%20produto.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btAlterar" defaultButton="true" layoutX="432.0" layoutY="223.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="89.0" style="-: Yellow;" text="Alterar" textFill="#5305ff">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

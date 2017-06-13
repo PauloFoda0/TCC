@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="455.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.GraficoVendidoController">
+   <children>
+      <ImageView fitHeight="519.0" fitWidth="717.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Imagens/degrade.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btVoltar" defaultButton="true" layoutX="277.0" layoutY="448.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="163.0" style="-: Yellow;" text="Voltar" textFill="#5305ff">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <AreaChart fx:id="acVendido" layoutY="-2.0" prefHeight="444.0" prefWidth="717.0" title="Produtos Vendidos">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </AreaChart>
+   </children>
+</AnchorPane>

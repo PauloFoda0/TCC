@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CadastroController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" layoutY="-1.0" opacity="0.56" pickOnBounds="true">
+         <image>
+            <Image url="@../Imagens/Produtos.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btCancelar" defaultButton="true" layoutX="93.0" layoutY="328.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="101.0" style="-: Yellow;" text="Cancelar" textFill="#5305ff">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="tfLogin" layoutX="105.0" layoutY="50.0" prefHeight="33.0" prefWidth="251.0" promptText="Login para cadastro" style="-: ;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="pfSenha" layoutX="105.0" layoutY="114.0" prefHeight="33.0" prefWidth="251.0" promptText="Senha para Cadastro">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="btCadastrar" defaultButton="true" layoutX="407.0" layoutY="328.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="101.0" text="Cadastrar" textFill="#1302ff">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="50.0" layoutY="50.0" prefHeight="33.0" prefWidth="56.0" text="LOGIN:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="114.0" prefHeight="33.0" prefWidth="56.0" text="SENHA:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgFoto" fitHeight="161.0" fitWidth="212.0" layoutX="386.0" layoutY="3.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Imagens/FotoPerfilNull.png" />
+         </image></ImageView>
+      <Button fx:id="btAlterar" defaultButton="true" layoutX="386.0" layoutY="184.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="89.0" style="-: Yellow;" text="Alterar" textFill="#5305ff">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btDeletar" defaultButton="true" layoutX="497.0" layoutY="184.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="89.0" style="-: Yellow;" text="Deletar" textFill="#5305ff">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="427.0" prefWidth="569.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TelaPrincipalController">
+   <children>
+      <ImageView fitHeight="457.0" fitWidth="609.0" layoutX="-8.0" opacity="0.71" pickOnBounds="true">
+         <image>
+            <Image url="@../Imagens/produto.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btPedidos" defaultButton="true" layoutX="14.0" layoutY="255.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="193.0" style="-: Yellow;" text="Pedidos" textFill="#5305ff">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btProdutos" defaultButton="true" layoutX="204.0" layoutY="25.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="193.0" style="-: Yellow;" text="Produtos" textFill="#5305ff">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btDescricao" defaultButton="true" layoutX="393.0" layoutY="264.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="193.0" style="-: Yellow;" text="Descrições" textFill="#5305ff">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btCadastro" defaultButton="true" layoutX="204.0" layoutY="345.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="193.0" style="-: Yellow;" text="Cadastro de Produto" textFill="#5305ff">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
