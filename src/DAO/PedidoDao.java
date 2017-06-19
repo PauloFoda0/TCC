@@ -55,6 +55,7 @@ public class PedidoDao {
                 ped.setProduto(rs.getString("produto"));
                 ped.setQuantidade(rs.getInt("quantidade"));
                 ped.setPreco(rs.getDouble("preco"));
+                ped.setEndereco(rs.getString("endereco"));
                 ped.setId(rs.getLong("id"));
                 pedido.add(ped);
             }

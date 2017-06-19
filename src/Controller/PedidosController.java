@@ -58,6 +58,9 @@ public class PedidosController implements Initializable {
 
     @FXML
     private TableColumn<Pedido, String> tcProduto;
+    
+    @FXML
+    private TableColumn<Pedido, String> tcEndereco;
 
     @FXML
     private TableColumn<Pedido, Integer> tcQuantidade;
@@ -76,13 +79,14 @@ public class PedidosController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         ExibirPedido();
+        
         tvPedido.getSelectionModel().selectedItemProperty().addListener(new ChangeListener() {
             @Override
             public void changed(ObservableValue observable, Object oldValue, Object newValue) {
-                excluir = (Pedido) newValue;
-
+            excluir=(Pedido) newValue;    
             }
         });
+        
         btExcluir.setOnMouseClicked((MouseEvent e) -> {
             ExcluirPedido();
         });
@@ -109,6 +113,7 @@ public class PedidosController implements Initializable {
         tcProduto.setCellValueFactory(new PropertyValueFactory("produto"));
         tcQuantidade.setCellValueFactory(new PropertyValueFactory("quantidade"));
         tcPreco.setCellValueFactory(new PropertyValueFactory("preco"));
+        tcEndereco.setCellValueFactory(new PropertyValueFactory("endereco"));
         tcId.setCellValueFactory(new PropertyValueFactory("id"));
 
         PedidoDao dao = new PedidoDao();
@@ -120,7 +125,8 @@ public class PedidosController implements Initializable {
         ObservableList<Pedido> pedidoPesquisa = FXCollections.observableArrayList();
         for (int x = 0; x < pedido.size(); x++) {
             if (pedido.get(x).getCliente().toLowerCase().contains(tfPesquisa.getText().toLowerCase())
-                    || pedido.get(x).getProduto().toLowerCase().contains(tfPesquisa.getText().toLowerCase())) {
+                    || pedido.get(x).getProduto().toLowerCase().contains(tfPesquisa.getText().toLowerCase())
+                    ||pedido.get(x).getEndereco().toLowerCase().contains(tfPesquisa.getText().toLowerCase())) {
                 pedidoPesquisa.add(pedido.get(x));
             }
         }

@@ -25,9 +25,8 @@ public class ProdutoDao {
     }
 
     public void InsereProduto(Produto prod) {
-        String sql = "INSERT INTO produto(tipo, litros, preco, foto) values (?, ?, ?, ?)";
+        String sql = "INSERT INTO produto(tipo, litros, preco, foto) VALUES (?, ?, ?, ?)";
         
-            
         try {
             PreparedStatement stmt=conexao.prepareStatement(sql);
             stmt.setString(1, prod.getTipo());

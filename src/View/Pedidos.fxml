@@ -10,30 +10,31 @@
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PedidosController">
    <children>
-      <ImageView fitHeight="545.0" fitWidth="752.0" layoutY="-1.0" pickOnBounds="true">
+      <ImageView fitHeight="567.0" fitWidth="761.0" layoutY="-1.0" pickOnBounds="true">
          <image>
             <Image url="@../Imagens/Produtos2.jpg" />
          </image>
       </ImageView>
-      <Button fx:id="btExcluir" defaultButton="true" layoutX="537.0" layoutY="462.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="181.0" style="-: Yellow;" text="Excluir" textFill="#5305ff">
+      <Button fx:id="btExcluir" defaultButton="true" layoutX="567.0" layoutY="486.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="181.0" style="-: Yellow;" text="Excluir" textFill="#5305ff">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <TableView fx:id="tvPedido" layoutX="4.0" layoutY="3.0" prefHeight="457.0" prefWidth="563.0">
+      <TableView fx:id="tvPedido" layoutX="4.0" layoutY="3.0" prefHeight="478.0" prefWidth="627.0">
         <columns>
-          <TableColumn fx:id="tcCliente" prefWidth="215.0" text="Cliente" />
-          <TableColumn fx:id="tcProduto" prefWidth="146.0" text="Produto" />
-            <TableColumn fx:id="tcQuantidade" prefWidth="71.0" text="Quantidade" />
-            <TableColumn fx:id="tcPreco" prefWidth="87.0" text="Preço" />
+          <TableColumn fx:id="tcCliente" prefWidth="150.0" text="Cliente" />
+          <TableColumn fx:id="tcProduto" prefWidth="131.0" text="Produto" />
+            <TableColumn fx:id="tcPreco" prefWidth="92.0" text="Preço" />
+            <TableColumn fx:id="tcEndereco" prefWidth="136.0" text="Endereco" />
+            <TableColumn fx:id="tcQuantidade" prefWidth="74.0" text="Quantidade" />
             <TableColumn fx:id="tcId" prefWidth="43.0" text="ID" />
         </columns>
       </TableView>
-      <Button fx:id="btVoltar" defaultButton="true" layoutX="14.0" layoutY="462.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="181.0" style="-: Yellow;" text="Voltar" textFill="#5305ff">
+      <Button fx:id="btVoltar" defaultButton="true" layoutX="14.0" layoutY="486.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="181.0" style="-: Yellow;" text="Voltar" textFill="#5305ff">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <TextField fx:id="tfPesquisa" layoutX="582.0" layoutY="14.0" prefHeight="25.0" prefWidth="164.0" promptText="Pesquisar pedido" />
+      <TextField fx:id="tfPesquisa" layoutX="638.0" layoutY="14.0" prefHeight="25.0" prefWidth="110.0" promptText="Pesquisar" />
    </children>
 </AnchorPane>

@@ -10,10 +10,12 @@ package Model;
  * @author Paulo Vitor
  */
 public class Pedido {
+
     private String cliente;
     private String produto;
     private int quantidade;
     private double preco;
+    private String endereco;
     private long id;
 
     public String getCliente() {
@@ -48,6 +50,14 @@ public class Pedido {
         this.preco = preco;
     }
 
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
+
     public long getId() {
         return id;
     }
@@ -55,4 +65,5 @@ public class Pedido {
     public void setId(long id) {
         this.id = id;
     }
+
 }
